@@ -47,6 +47,9 @@
 
 .forms-container{
     border: 2px solid blue;
+    height: 100%;
+    background-color: var(--color-background-form);
+
 }
 
 .banner{
@@ -55,6 +58,32 @@
 
 .sidebar{
     border: 2px solid red;
+}
+
+/*  */
+form{
+    border: 2px solid red;
+    padding: 1.8rem;
+}
+
+form p{
+    border: 2px solid green;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    margin-top: 0.3rem;
+    margin-bottom: 1.8rem;
+}
+
+form p a{
+    border: 2px solid red;
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+
+.other-login img{
+    width: 1rem;
 }
 
 nav{
