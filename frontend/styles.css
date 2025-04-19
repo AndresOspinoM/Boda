@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+/* Colours */
+:root{
+    --color-primary: #925fe2;
+    --color-secondary: #6d4ea1;
+    --color-backgound: #d9c7f2;
+    --color-background-form: #fff;
+    --color-text-primary: #000;
+    --color-text-secondary: #656565;
+    --color-border: #cdcdcd;
+    --color-buttom-text: #fff;
+    --color-icon-google: #d84437;
+    --color-icon-facebook: #426782;
+    --color-title: #f7f3f4;
+}
