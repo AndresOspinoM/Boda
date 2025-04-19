@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body{
-    font-family:  Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Colours */
@@ -22,3 +22,57 @@ body{
     --color-icon-facebook: #426782;
     --color-title: #f7f3f4;
 }
+
+
+/* body */
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    margin-right: 20px;
+    gap: 90px;
+    list-style: none;
+}
+
+nav li{
+    font-size: 1.0em;
+    text-transform: uppercase;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000;
+    color: rgb(var(--txt, var(--color_15, color_15)));
+    display: inline-block;
+    padding: 0 10px;
+    transition: var(--trans, color .4s ease 0s);
+}
+
+nav a:hover{
+    color: #ffd4b1;
+}
+
+li a i{
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+.login{
+    text-transform: none;
+}
+
+
+.logo{
+    margin: 0 100px;
+    padding-top: 28px;
+}
+
+
