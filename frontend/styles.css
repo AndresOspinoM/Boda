@@ -26,18 +26,35 @@
 
 
 /* body-login*/
-.login-home{
-    border:  5px solid red;
+#login-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
     background-color: var(--color-backgound);
+
 }
 
-/* formulacio de inicio de secion*/
+/* formulario de inicio de secion*/
 .container{
+    display: grid;
+    grid-template-columns: 4.2fr 5fr 0.8fr;
     border: 2px solid green;
     width: 57.25rem;
     height: 31rem;
+}
+
+.forms-container{
+    border: 2px solid blue;
+}
+
+.banner{
+    border: 2px solid black;
+}
+
+.sidebar{
+    border: 2px solid red;
 }
 
 nav{
