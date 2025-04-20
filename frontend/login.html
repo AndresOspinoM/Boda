@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,11 +19,11 @@
 
                 </div>
                 <div class="input-container">
-                    <div>
+                    <div class="forget">
                         <label for="contraseña">Contraseña</label>
                         <a href="#"> ¿Olvidaste tu contraseña?</a>
                     </div>
-                    <input id="Contraseña" type="" placeholder="ingresa 5 caracteres o mas">
+                    <input id="Contraseña" type="password" placeholder="ingresa 5 caracteres o mas">
                 </div>
                 <div class="remember-me">
                     <input type="checkbox" id="checkbox">
@@ -32,26 +32,63 @@
                 <button>LOGIN</button>
 
                 <div class="line-width-text">
-                    <span>O inicia sesion con</span>
+                    <span>Inicia  sesión con</span>
                 </div>
                 <div class="other-login">
                     <a href="#" class="google">
                         <img src="icons/google.svg" alt="google">
                         <span>Google</span>
                     </a>
-                    <a href="facebook">
+                    <a href="#" class="facebook">
                         <img src="icons/facebook.svg" alt="facebook">
                         <span>Facebook</span>
                     </a>
                 </div>
             </form>
+            <form action="">
+                <h2>Registro</h2>
+                <p>¿Ya estás registrado?<a href="#">Iniciar sesión</a></p>
+                <div class="input-container">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="texto" placeholder="Tu nombre">
+
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="ejemplo@gmail.com">
+
+                </div>
+                <div class="input-container">
+                    <div class="forget">
+                        <label for="contraseña">Contraseña</label>
+                    </div>
+                    <input id="Contraseña" type="password" placeholder="ingresa 5 caracteres o mas">
+                </div>
+                <button class="btno-registrar">Registrar</button>
+            </form>
             </div>
         </div>
         <div class="banner">
-    
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <section>
+                <h1>Regístrate para <span>nuestro gran día</span></h1>
+                <p>Inicia sesión para acceder a tu cuenta.</p>
+                <img src="imagenes/banner.svg" alt="banner">
+            </section>
         </div>
         <div class="sidebar">
-    
+            <div class="sign">
+                <img src="icons/crown.svg" alt="corona">
+                <span>Iniciar sesión</span>
+            </div>
+            <div class="sidebar">
+                <div class="sign">
+                    <img src="icons/rule.svg" alt="">
+                    <span>Crear cuenta</span>
+                </div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>
