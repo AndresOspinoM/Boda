@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body id="login-home">
-    <div class="container">
+    <div class="container" id="container">
         <div class="forms-container">
-            <div class="forms">
-                <form action="">
+            <div class="forms" id="forms">
+                <form action="" id="sign-in">
                 <h2>Login</h2>
-                <p>¿Aún no estás registrado? <a href="#">Registrate</a></p>
+                <p>¿Aún no estás registrado? <a href="#" id="link-sign-in">Registrate</a></p>
                 <div class="input-container">
                     <label for="email">Email</label>
                     <input id="email" type="email" placeholder="ejemplo@gmail.com">
@@ -45,9 +45,9 @@
                     </a>
                 </div>
             </form>
-            <form action="">
+            <form action="" id="sign-up">
                 <h2>Registro</h2>
-                <p>¿Ya estás registrado?<a href="#">Iniciar sesión</a></p>
+                <p>¿Ya estás registrado?<a href="#" id="link-sign-up">Iniciar sesión</a></p>
                 <div class="input-container">
                     <label for="nombre">Nombre</label>
                     <input id="nombre" type="texto" placeholder="Tu nombre">
@@ -78,18 +78,17 @@
                 <img src="imagenes/banner.svg" alt="banner">
             </section>
         </div>
-        <div class="sidebar">
-            <div class="sign">
+        <div class="sidebar" id="sidebar">
+            <div class="sign" id="btno-sign-in">
                 <img src="icons/crown.svg" alt="corona">
                 <span>Iniciar sesión</span>
             </div>
-            <div class="sidebar">
-                <div class="sign">
-                    <img src="icons/rule.svg" alt="">
-                    <span>Crear cuenta</span>
-                </div>
+            <div class="sign" id="btno-sign-up">
+                <img src="icons/rule.svg" alt="">
+                <span>Crear cuenta</span>
             </div>
         </div>
+        
     </div>
     <script src="script.js"></script>
 </body>
