@@ -49,7 +49,14 @@
     height: 100%;
     background-color: var(--color-background-form);
     overflow: hidden;
+}
 
+.forms{
+    transition: transform 0.5s ease;
+}
+
+.forms.active{
+    transform: translateY(-50%);
 }
 
 .banner{
@@ -131,6 +138,11 @@
     right: 0;
     right: 0;
     top: 0;
+    transition: top 0.5s ease;
+}
+
+.sidebar.active::after{
+    top: 50%;
 }
 
 .sidebar .sign{
@@ -187,7 +199,7 @@ form p a{
     outline: none;
 }
 
-.input-contaier label, .input-contaier a{
+.input-container label, .input-container a{
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -332,4 +344,9 @@ li a i{
     padding-top: 28px;
 }
 
+/* forms animation */
+@keyframes slideIn{
+    to {opacity: 1; transform: translateX(0);}
+    top {opacity: 1; transform: translateX(0);}
+}
 
