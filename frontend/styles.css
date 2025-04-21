@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 
 *{
     padding: 0;
@@ -300,6 +304,7 @@ nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
 }
 
 nav ul{
@@ -309,11 +314,13 @@ nav ul{
     margin-right: 20px;
     gap: 90px;
     list-style: none;
+    overflow: hidden;
 }
 
 nav li{
     font-size: 0.9rem;
     text-transform: uppercase;
+    
 }
 
 nav a{
@@ -342,6 +349,211 @@ li a i{
 .logo{
     margin: 0 100px;
     padding-top: 28px;
+}
+
+.titulos {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    height: auto; /* mejor que height fija */
+    flex-wrap: wrap;
+}
+
+  /* Columna izquierda */
+.titulos-boda {
+    flex: 1;
+    min-width: 300px;
+}
+
+.styles-h4 {
+    letter-spacing: 2px;
+    font-size: 2.3rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.titulos-boda h1 span {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.titulos-boda p {
+    width: 58%;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.titulos-boda button {
+    width: 30%;
+    margin-top: 3rem;
+    padding: 1.2rem 0;
+    font-weight: 500;
+    border: 1px solid black;
+    border-radius: 3.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.titulos-boda button:hover {
+    background-color: #1e1d1d;
+    color: white;
+}
+
+  /* Imagen pareja */
+.img-container {
+    position: relative;
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: flex-end;
+    padding-top: 18rem;
+}
+
+.img-container img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: -200px;
+    position: relative;
+    z-index: 3;
+
+}
+
+/* seccion Celebrando*/
+.seccion-amor {
+    background-color: #f2f2f2; /* gris suave */
+    padding: 4rem 2rem;
+}
+
+.contenido-amor {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.lado-izquierdo {
+    flex: 1;
+}
+
+.lado-izquierdo h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 2rem;
+}
+
+.foto-amor {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.lado-derecho {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lista-eventos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-eventos li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+}
+
+.numero {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color: #444;
+}
+
+.texto h3 {
+    font-weight: 100;
+    font-size: 2.6rem;
+    margin-bottom: 0.5rem;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.texto p {
+    font-size: 1.0rem;
+    color: #555;
+    max-width: 400px;
+    line-height: 1.5;
+}
+
+/* seccion Nosotros*/
+.nosotros-section{
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.contenido-superior{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.contenido-superior h4{
+    font-size: 2.5rem;
+    padding-top: 6rem;
+    margin-left: 4rem;
+    padding-bottom: 9rem;
+    display: block;
+    max-width: 26%;
+    text-align: left;
+    margin: 60px;
+    line-height: 1.4;
+    font-weight: 600;
+    font-family:  "Cormorant Garamond", serif; ;
+}
+
+.contenido-superior p{
+    display: block;
+    width: 48%;
+    line-height: 1.7;
+    text-align: center;
+    margin-right: 6rem;
+    text-align: left;
+    font-family:  "Cormorant Garamond", serif;
+    font-size: 1.2rem;
+}
+
+.fotos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.fotos-container img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 3px;
 }
 
 /* forms animation */
