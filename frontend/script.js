@@ -52,9 +52,6 @@ function transition(parent) {
     }, 300); 
 }
 
-ScrollReveal().reveal('.item', {
-    delay: 375,
-    duration: 500,
-    reset: true
-});
+
+
 
