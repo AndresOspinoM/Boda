@@ -7,14 +7,13 @@
     <title>MI BODA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
     <nav>
       <div class="logo">Mi logo</div>
       <ul class="nav-links">
         <li><a href="#Nosotros">Nosotros</a></li>
-        <li><a href="#Viaje">Viaje y Estancia</a></li>
+        <li><a href="#Viaje-estancia">Viaje y Estancia</a></li>
         <li><a href="#Registro">Registro</a></li>
         <li><a href="#P&R">P&R</a></li>
         <li><a href="login.html" class="login">Entrar<i class="fa-regular fa-circle-user"></i></a></li>
@@ -73,10 +72,10 @@
         </div>
       </div>
       
-      <div class="fotos-container">
-        <img src="imagenes/parejas1.jpg" alt="Pareja felice">
-        <img src="imagenes/parejas2.jpg" alt="Pareja feliz">
-        <img src="imagenes/parejas3.jpg" alt="Pareja feliz">
+      <div class="fotos-container" id="fotos-container">
+        <img src="imagenes/parejas1.jpg" alt="Pareja felice" class="foto">
+        <img src="imagenes/parejas2.jpg" alt="Pareja feliz" class="foto">
+        <img src="imagenes/parejas3.jpg" alt="Pareja feliz" class="foto">
       </div>
       <div class="testimonio-container">
           <h2>"Para el mundo eres una persona, pero para una persona eres el mundo".</h2>
@@ -90,7 +89,7 @@
       </div>
     </section>
       </div>
-      <section class="viaje-estancia">
+      <section id="Viaje-estancia" class="viaje-estancia">
         <h2>Viaje y estancia</h2>
         <div class="cards-container">
           <div class="card">
@@ -114,16 +113,32 @@
         </div>
       </section>
     </div>
-    <div class="container-text">
-      <h2>¿Nuevo en la página?</h2>
-    </div>
-    <a href="/registro" class="overlay-link">Regístrate aquí</a>
-      <section class="register-image-section">
-        <div class="image-container">
-          <img src="imagenes/bride-groom-their-wedding-ceremony (1).jpg" alt="Registro">
-      </section>
-      
+    <section id="Registro" class="container-parallax-2">
+      <div class="content-wrapper">
+        <div class="text-content">
+          <h2>¿Nuevo en la página?</h2>
+          <p>¡Celebra el amor con nosotros!</p>
+          <a href="registrate-aqui" class="register-link">Regístrate aquí</a>
+        </div>
+        <div class="image-wrapper">
+          <div class="box-parallax-2"></div>
+        </div>
+      </div>
+    </section>
+    <section class="esperamos-verte">
+      <div class="texto-grane">
+        <h2>¡Esperamos verte!</h2>
+      </div>
+    </section>
     </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+ScrollReveal().reveal('.foto', {
+    delay: 260,
+    duration: 840,
+    reset: true
+});
+    </script>
   </body>
 </html>
