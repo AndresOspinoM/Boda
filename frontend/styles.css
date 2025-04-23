@@ -672,6 +672,7 @@ li a i{
     display: flex;
     align-items: center;
     padding: 0 5%;
+    justify-content: space-between;
 }
 
 .content-wrapper {
@@ -691,15 +692,13 @@ li a i{
 
 .text-content h2{
     font-family: "Cormorant Garamond", serif;
-    font-size: 3.0rem;
-    display: flex;
-    font-weight: 500;
-    width: 100%;
+    font-size: 2.3rem;
+    font-weight: 700;
 }
 
 .text-content p{
-    text-align: center;
     margin-top: 10px;
+    margin-left: 28px;
 }
 
 .image-wrapper {
@@ -729,8 +728,8 @@ li a i{
 
 .register-link {
     display: inline-block;
-    margin-top: 25px;
-    margin-left: 7rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
     padding: 1.2rem;
     background-color: #ffffff; /* Color de ejemplo */
     color: #141313;
