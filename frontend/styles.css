@@ -22,15 +22,7 @@ html {
 
 /* body-login*/
 @import url(https://fonts.googleapis.com/css?family=Poppins:300);
-html {
-height: 100%;
-}
-body{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
-    background: linear-gradient(#f19ce1, #ffffff);
-}
+
 .login-page {
     width: 400px;
     padding: 8% 0 0;
@@ -227,21 +219,6 @@ nav a:hover {
     color: #eaa46b;
 }
 
-/* hamburguer */
-.hamburger{
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.bar{
-    width: 25px;
-    height: 3px;
-    background-color: #292727;
-    margin: 4px 0;
-    transition: 0.3s ease;
-}
-
 
 li a i{
     padding-left: 10px;
@@ -257,6 +234,24 @@ li a i{
     margin: 0 100px;
     padding-top: 28px;
 }
+
+
+/*  Menu hamburger*/
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+/* Titulos */
 
 .titulos {
     z-index: 2;
@@ -729,18 +724,395 @@ footer{
     color: #1a1a1a;
 }
 
-/* Responsive login/register form */
+
+/* Responsive Nav-bar*/
+@media (max-width: 768px) {
+    .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    display: none;
+    z-index: 1000;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4); 
+    }
+
+    .nav-links.active {
+    display: flex;
+    }
+
+    .hamburger {
+    display: flex;
+    z-index: 1100; 
+    }
+
+    nav {
+    position: relative; 
+    }
+}
+
+/* Responsive Seccion Titulos */
+@media (max-width: 1024px) {
+    .titulos {
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    margin-top: 4rem;
+    }
+
+    .titulos-boda h1 span {
+    font-size: 4rem;
+    }
+
+    .titulos-boda p {
+    width: 100%;
+    }
+
+    .titulos-boda button {
+    width: 60%;
+    }
+
+    .img-container {
+    padding-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: -50px;
+    }
+
+    .img-container img {
+    max-width: 80%;
+    margin-bottom: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .styles-h4 {
+    font-size: 1.5rem;
+    }
+
+    .titulos-boda h1 span {
+    font-size: 2.8rem;
+    }
+
+    .titulos-boda button {
+    width: 80%;
+    padding: 0.8rem 0;
+    }
+
+    .img-container {
+    padding-top: 2rem;
+    margin-bottom: 0;
+    }
+
+    .img-container img {
+    max-width: 100%;
+    margin-bottom: 0;
+    }
+}
+
+/* Responsive seccion Celebracion de amor */
+@media (max-width: 1024px) {
+    .lado-izquierdo h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    }
+
+    .lado-izquierdo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .foto-amor {
+    max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .lado-izquierdo h2 {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+    }
+
+    .contenido-amor {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    }
+}
 
 
 
+/* Responsive seccion Nosotros */
+@media (max-width: 1024px) {
+    .contenido-superior {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 40px 20px;
+    }
+
+    .contenido-superior h4 {
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 2rem;
+    }
+
+    .texto-largo p {
+    font-size: 1.1rem;
+    }
+
+    .fotos-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    }
+
+    .testimonio-container h2 {
+    max-width: 80%;
+    font-size: 2.8rem;
+    }
+
+    .testimonio-container {
+    height: auto;
+    padding: 60px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contenido-superior h4 {
+    font-size: 1.6rem;
+    }
+
+    .texto-largo p {
+    font-size: 1rem;
+    }
+
+    .fotos-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    }
+
+    .fotos-container img {
+    height: 250px;
+    }
+
+    .testimonio-container h2 {
+    font-size: 2rem;
+    }
+
+    .testimonio-container p {
+    margin-top: 40px;
+    }
+}
+
+/* Responsive seccion Viaje y Estancia */
+@media (max-width: 768px) {
+    .viaje-estancia h2 {
+        text-align: center;
+        margin-left: 0;
+        font-size: 2.5rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .numero {
+        font-size: 1.6rem;
+    }
+
+    .card h3 {
+        font-size: 1.6rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+    }
+
+    .card a {
+        font-size: 0.95rem;
+    }
+}
 
 
 
+/* Responsive seccion Efecto Parallax*/
+@media (max-width: 768px) {
+    .container-parallax {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.6); 
+    }
+}
 
 
-/* forms animation */
-@keyframes slideIn{
-    to {opacity: 1; transform: translateX(0);}
-    top {opacity: 1; transform: translateX(0);}
+/* Responsive seccion Registro */
+@media (max-width: 1024px) {
+    .container-parallax-2 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    }
+
+    .text-content {
+    text-align: center;
+    max-width: 100%;
+    }
+
+    .image-wrapper {
+    width: 100%;
+    max-width: 100%;
+    height: 50vh;
+    margin-top: 2rem;
+    margin-right: 0;
+    }
+
+    .box-parallax-2 {
+    height: 100%;
+    background-attachment: scroll;
+    }
+
+    .register-link {
+    margin-top: 2rem;
+    margin-left: 0;
+    padding: 1rem;
+    width: 70%;
+    }
+}
+
+@media (max-width: 600px) {
+    .text-content h2 {
+    font-size: 1.8rem;
+    }
+
+    .text-content p {
+    margin-left: 0;
+    font-size: 1rem;
+    }
+
+    .image-wrapper {
+    height: 40vh;
+    }
+
+    .box-parallax-2 {
+    background-attachment: scroll;
+    }
+
+    .register-link {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 80%;
+    }
+}
+
+/* Responsive seccion Esperamos Verte */
+@media (max-width: 1024px) {
+    .esperamos-verte {
+    height: 50vh;
+    }
+
+    .esperamos-verte h2 {
+    font-size: 4rem;
+    margin-bottom: 40px;
+    }
+
+    .esperamos-verte a {
+    padding: 20px 50px;
+    font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .esperamos-verte {
+    height: 40vh;
+    }
+
+    .esperamos-verte h2 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    }
+
+    .esperamos-verte a {
+    padding: 15px 40px;
+    font-size: 1rem;
+    }
+}
+
+/* Responsive Footer */
+@media (max-width: 1024px) {
+    .footer-container {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    /* Ajuste del footer-left */
+    .footer-left p {
+        font-size: 2rem; 
+        margin-left: 0;
+        text-align: center; 
+        margin-bottom: 20px; 
+    }
+
+    .footer-left p.footer-credit {
+        margin-top: 20px; 
+        font-size: 1rem;
+        text-align: center; 
+    }
+
+    /* Ajuste del footer-right */
+    .footer-right {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer-right li {
+        margin: 10px 0; 
+        padding: 6px;
+        text-align: center; 
+    }
+
+    .footer-right a {
+        margin-right: 0;
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-left p {
+        font-size: 1.6rem; 
+    }
+
+    .footer-right li {
+        margin: 8px 0; 
+        font-size: 0.9rem;
+    }
+
+    .footer-right a {
+        font-size: 0.9rem; 
+    }
 }
 
