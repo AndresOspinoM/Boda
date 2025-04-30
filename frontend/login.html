@@ -1,95 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
+    <title>Login</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body id="login-home">
-    <div class="container" id="container">
-        <div class="forms-container">
-            <div class="forms" id="forms">
-                <form action="" id="sign-in">
-                <h2>Login</h2>
-                <p>¿Aún no estás registrado? <a href="#" id="link-sign-in">Registrate</a></p>
-                <div class="input-container">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="ejemplo@gmail.com">
-
-                </div>
-                <div class="input-container">
-                    <div class="forget">
-                        <label for="contraseña">Contraseña</label>
-                        <a href="#"> ¿Olvidaste tu contraseña?</a>
-                    </div>
-                    <input id="Contraseña" type="password" placeholder="ingresa 5 caracteres o mas">
-                </div>
-                <div class="remember-me">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox">Recuerdame</label>
-                </div>
-                <button>LOGIN</button>
-
-                <div class="line-width-text">
-                    <span>Inicia  sesión con</span>
-                </div>
-                <div class="other-login">
-                    <a href="#" class="google">
-                        <img src="icons/google.svg" alt="google">
-                        <span>Google</span>
-                    </a>
-                    <a href="#" class="facebook">
-                        <img src="icons/facebook.svg" alt="facebook">
-                        <span>Facebook</span>
-                    </a>
-                </div>
-            </form>
-            <form action="" id="sign-up">
-                <h2>Registro</h2>
-                <p>¿Ya estás registrado?<a href="#" id="link-sign-up">Iniciar sesión</a></p>
-                <div class="input-container">
-                    <label for="nombre">Nombre Y Apellido</label>
-                    <input id="nombre" type="texto" placeholder="Tu nombre y apellido">
-
-                </div>
-                <div class="input-container">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" placeholder="ejemplo@gmail.com">
-
-                </div>
-                <div class="input-container">
-                    <div class="forget">
-                        <label for="contraseña">Contraseña</label>
-                    </div>
-                    <input id="Contraseña" type="password" placeholder="ingresa 5 caracteres o mas">
-                </div>
-                <button class="btno-registrar">Registrar</button>
-            </form>
-            </div>
-        </div>
-        <div class="banner">
-            <div class="shape shape1"></div>
-            <div class="shape shape2"></div>
-            <div class="shape shape3"></div>
-            <section>
-                <h1>Regístrate para <span>nuestro gran día</span></h1>
-                <p>Inicia sesión para acceder a tu cuenta.</p>
-                <img src="imagenes/banner.svg" alt="banner">
-            </section>
-        </div>
-        <div class="sidebar" id="sidebar">
-            <div class="sign" id="btno-sign-in">
-                <img src="icons/crown.svg" alt="corona">
-                <span>Iniciar sesión</span>
-            </div>
-            <div class="sign" id="btno-sign-up">
-                <img src="icons/rule.svg" alt="">
-                <span>Crear cuenta</span>
-            </div>
-        </div>
-        
-    </div>
-    <script src="script.js"></script>
+<body style="display:flex; align-items:center; justify-content:center;">
+<div class="login-page">
+<div class="form">
+    <form class="register-form" method="POST">
+    <h2>Register</h2>
+      <input type="text" placeholder="Full Name *" required/>
+      <input type="text" placeholder="Username *" required/>
+      <input type="email" placeholder="Email *" required/>
+      <input type="password" placeholder="Password *" required/>
+    <a class="btn" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Create
+    </a>
+    <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form class="login-form" method="post">
+    <h2></i> Login</h2>
+    <input type="text" placeholder="Username" required />
+    <input type="password" placeholder="Password" required/>
+    <a class="btn" href="#">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Sign in
+    </a>
+    <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
+

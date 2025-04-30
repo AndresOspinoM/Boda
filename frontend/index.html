@@ -9,16 +9,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   </head>
   <body>
+    <header>
     <nav>
       <div class="logo">Mi logo</div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#Nosotros">Nosotros</a></li>
         <li><a href="#Viaje-estancia">Viaje y Estancia</a></li>
         <li><a href="#Registro">Registro</a></li>
         <li><a href="#P&R">P&R</a></li>
         <li><a href="login.html" class="login">Entrar<i class="fa-regular fa-circle-user"></i></a></li>
       </ul>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
     </nav>
+  </header>
     <div class="titulos">
       <div class="titulos-boda">
         <h4 class="styles-h4">Nos vamos a casar</h4>
@@ -151,11 +158,38 @@
     <script src="script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-ScrollReveal().reveal('.foto', '.contenido-amor', '.lado-derecho', '.nosotros-section', '.cards-container', '.footer-container', {
-    delay: 260,
-    duration: 840,
-    reset: true
+      ScrollReveal().reveal('.foto', {
+  delay: 260,
+  duration: 840,
+  reset: true
 });
+ScrollReveal().reveal('.contenido-amor', {
+  delay: 260,
+  duration: 840,
+  reset: true
+});
+ScrollReveal().reveal('.lado-derecho', {
+  delay: 260,
+  duration: 840,
+  reset: true
+});
+ScrollReveal().reveal('.nosotros-section', {
+  delay: 260,
+  duration: 840,
+  reset: true
+});
+ScrollReveal().reveal('.cards-container', {
+  delay: 260,
+  duration: 840,
+  reset: true
+});
+ScrollReveal().reveal('.footer-container', {
+  delay: 260,
+  duration: 840,
+  reset: true
+});
+
+
     </script>
   </body>
 </html>
