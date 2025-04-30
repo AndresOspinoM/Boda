@@ -154,7 +154,6 @@
         </ul>
       </div>
     </footer>
-    </div>
     <script src="script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
@@ -188,8 +187,15 @@ ScrollReveal().reveal('.footer-container', {
   duration: 840,
   reset: true
 });
-
-
     </script>
+    <script>
+      const hamburger = document.getElementById('hamburger');
+      const navLinks = document.getElementById('nav-links');
+    
+      hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+      });
+    </script>
+    
   </body>
 </html>
