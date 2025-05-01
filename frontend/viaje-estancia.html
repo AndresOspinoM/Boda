@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaje y Estancia</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
         <div class="logo">Mi logo</div>
         <ul class="nav-links" id="nav-links">
-            <li><a href="#Nosotros">Nosotros</a></li>
-            <li><a href="#Viaje-estancia">Viaje y Estancia</a></li>
-            <li><a href="#Registro">Registro</a></li>
-            <li><a href="#P&R">P&R</a></li>
+            <li><a href="index.html#Nosotros">Nosotros</a></li>
+            <li><a href="viaje-estancia.html">Viaje y Estancia</a></li>
+            <li><a href="index.html#Registro">Registro</a></li>
+            <li><a href="index.html#P&R">P&R</a></li>
             <li><a href="login.html" class="login">Entrar<i class="fa-regular fa-circle-user"></i></a></li>
         </ul>
         <div class="hamburger" id="hamburger">
@@ -24,7 +25,49 @@
         </div>
         </nav>
     </header>
+    <section class="como-llegar">
+        <div class="contenido">
+            <h2>Cómo llegar</h2>
+            <p>Capilla Nuestra Señora de la Esperanza<br> Cra. 7 #12-45 Barichara, Santander,<br> Colombia</p>
+        </div>
+            <div class="mapa-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2031192.4623207066!2d-74.96130011805211!3d6.1074238800601846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e69cf7b9d2cb34d%3A0xf6661401d4bc4774!2sErmita%20De%20Nuestra%20Se%C3%B1ora%20De%20La%20Piedra!5e0!3m2!1sit!2sit!4v1746107600431!5m2!1sit!2sit">
+                </iframe>
+        </div>
+    </section>
+    <section class="lugares">
+        <h2>Cuando estés allí</h2>
+        <p>Nos emociona compartirles algunos de<br> nuestros lugares favoritos de la zona</p>
 
+        <div class="lugares-container">
+        <div class="lugar">
+            <img src="imagenes/im1.avif" alt="Caffe">
+            <h2>Café Bar El Mirador</h2>
+            <p>Un sitio encantador con bebidas locales y vistas hermosas al atardecer.</p>
+            <a href="#">VER ONLINE</a>
+        </div>
+        <div class="lugar">
+            <img src="imagenes/im2.avif" alt="Museo">
+            <h2>Museo Cultural de Barichara</h2>
+            <p>Descubre la historia del pueblo con arte y tradición en este museo local.</p>
+            <a href="#">VER ONLINE</a>
+        </div>
+        <div class="lugar">
+            <img src="imagenes/im3.avif" alt="Jardines">
+            <h2>Los Jardines de Esperanza</h2>
+            <p>Un espacio lleno de naturaleza y tranquilidad, ideal para pasear y relajarse.</p>
+            <a href="imagenes/im3.avif">VER ONLINE</a>
+        </div>
+        </div>
+    </section>
     <script src="script.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

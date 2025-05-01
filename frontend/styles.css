@@ -724,6 +724,84 @@ footer{
     color: #1a1a1a;
 }
 
+/* Pagina de la seccion Viaje y Estancia */
+.como-llegar {
+    padding: 100px 20px 60px; 
+    background-color: #ffffff; 
+}
+
+.contenido {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.contenido h2 {
+    font-size: 4rem;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+}
+
+.contenido p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.mapa-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.mapa-container iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 100vh;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Seccion Cuando estes ahi */
+.lugares{
+    width: 100%;
+    height: 200px;
+    padding: 70px 20px;
+    align-items: center;
+    border: 2px solid blue;
+    height: 300px;
+}
+
+
+.lugares-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    border: 2px solid red;
+    margin-bottom: 4rem;
+    width: 100%;
+    height: 100vh;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.lugares img{
+    width: 80%;
+    border: 2px solid green;
+}
+
+.lugares h2{
+    display: flex;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+}
+
+
+
 
 /* Responsive Nav-bar*/
 @media (max-width: 768px) {
