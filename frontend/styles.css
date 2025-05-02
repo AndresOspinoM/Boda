@@ -766,41 +766,120 @@ footer{
 
 
 /* Seccion Cuando estes ahi */
-.lugares{
-    width: 100%;
-    height: 200px;
-    padding: 70px 20px;
-    align-items: center;
-    border: 2px solid blue;
-    height: 300px;
+.lugares {
+    padding: 4rem 2rem;
+    background-color: #f2f2f2;
 }
 
-
-.lugares-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.lugares-container {
+    display: flex;
     justify-content: center;
-    border: 2px solid red;
-    margin-bottom: 4rem;
-    width: 100%;
-    height: 100vh;
-    max-width: 1200px;
-    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
 }
 
-.lugares img{
-    width: 80%;
-    border: 2px solid green;
+.lugar {
+    border-radius: 10px;
+    padding: 1rem;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px #0000001a;
+}
+
+.lugar img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    object-fit: cover;
 }
 
 .lugares h2{
-    display: flex;
     font-family: "Cormorant Garamond", serif;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-left: 6rem;
 }
 
+.p-principal{
+    margin-left: 6rem;
+    font-size: 1.2rem;
+    margin-top: 2.1rem;
+}
 
+.lugar h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.lugar p {
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.lugar a {
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+/* seccion de Donde Alojarse */
+.estando-ahi{
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+}
+
+.estando-ahi-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.donde{
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px #0000001a ;
+}
+
+.donde img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.estando-ahi h2{
+    font-family: "Cormorant Garamond", serif;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-left: 6rem;
+}
+
+.p-secundario{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-left: 6rem;
+}
+
+.donde h3{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.donde p{
+    font-size: 0.95rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+.donde a{
+    display: inline-block;
+    margin-top: 2rem;
+}
 
 
 /* Responsive Nav-bar*/
@@ -1194,3 +1273,98 @@ footer{
     }
 }
 
+/* Responsive pagina de Viaje y Estancia*/
+@media (max-width: 768px) {
+    .contenido h2 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .contenido p {
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .mapa-container {
+        justify-content: center;
+    }
+
+    .mapa-container iframe {
+        height: 400px;
+        max-width: 100%;
+    }
+}
+
+
+/* Lugares */
+@media (max-width: 768px) {
+    .lugares h2 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .p-principal {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .lugares-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lugar {
+        max-width: 90%;
+    }
+
+    .lugar h3 {
+        text-align: center;
+    }
+
+    .lugar p {
+        text-align: center;
+    }
+
+    .lugar a {
+        display: block;
+        text-align: center;
+    }
+}
+
+
+/* Estando Ahi */
+@media (max-width: 768px) {
+    .estando-ahi h2 {
+        font-size: 2.5rem;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .p-secundario {
+        margin-left: 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .estando-ahi-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .donde {
+        max-width: 90%;
+    }
+
+    .donde h3,
+    .donde p {
+        text-align: center;
+    }
+
+    .donde a{
+        display: block;
+        text-align: center;
+    }
+}
